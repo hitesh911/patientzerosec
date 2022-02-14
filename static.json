@@ -1,7 +1,6 @@
 {
   "root":"dist",
   "clear_urls": true,
-  "error_page": "index.html",
   "headers":{
     "/**":{
       "Access-Control-Allow_Origin":"*"
