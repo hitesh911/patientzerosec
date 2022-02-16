@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
+    <script src="/main.js"></script>
     <title>About</title>
-  <link rel="stylesheet" href="/assets/style.746068aa.css">
+  <link rel="stylesheet" href="/assets/style.162baa1d.css">
 </head>
 
 <body>
@@ -18,14 +19,31 @@
                 <div class="flex ">
                     <!-- Website Logo -->
                     <div class="flex items-center">
-                        <a href="/index.html" class=" ">
+                        <a href="/" class=" ">
                             <img src="/assets/logo.dd5105cb.png" alt="Logo" class="h-12 w-20" />
                         </a>
                     </div>
                     <!-- Primary Navbar items -->
                     <div class="flex flex-wrap items-center ">
                         <a href="/index.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Home</a>
-                        <a href="/services.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Services</a>
+                        
+                        <div data-dropdown  class=" services-dropdown">
+                            <button data-dropdown-button class=" drop-button py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Services
+                                <svg id= "dropdown-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down ml-1" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                  </svg>                               
+                            </button>
+                                <div class="drop-shadow services-dropdown-menu">
+                                    <ul class = "services-list">
+                                        <li><a href="/index.html#webapplication"> Web Application</a></li>
+                                        <li><a href="/index.html#networking"> Networking</a></li>
+                                        <li><a href="/index.html#mobileapplication"> Mobile application</a></li>
+                                        <li><a href="/index.html#wireless"> Wireless Networking</a></li>
+                                        <li><a href="/index.html#hackingattacks"> Hacking Attacks</a></li>
+                                        <li><a href="/index.html#sourcecode"> Source Code</a></li>
+                                    </ul>
+                                </div>
+                        </div>
                         <a href="/about.html" class="py-4 px-2 text-green-500 border-b-4 border-green-500 font-semibold">About</a>
                         <a href="/contact.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Contact</a>
                     </div>
@@ -37,14 +55,12 @@
     <section class="text-gray-600 body-font overflow-hidden">
         <div class="container px-5 py-20 mx-auto">
             <div class="flex flex-wrap -m-12">
-                <div class="p-12 pt-0 md:w-1/2 flex flex-col items-start">
+                <div class="p-12  pt-0 md:w-1/2 flex flex-col items-start">
                     <span class="py-4  text-green-500  border-green-500 font-bold text-2xl flex flex-nowrap">About Us</span>
                     <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">PatientZero Security is an Indian based Cyber Security Services organization.</h2>
                     <p class=" leading-relaxed mb-8">We focus on providing variety of security services for our client’s applications & infrastructure. Some of the Cyber Security services offered by us include Vulnerability Assessment and Penetration Testing today known as VAPT, Red Team Attack Simulation and Source Code Review Assessments. We also provide customized security solutions as per the client needs. Our Team at PatientZero Security consists of Highly Experienced and Industry Certified Security Professionals each best at different level of technical skills. PatientZero Security, apart from being a CyberSecurity Services provider also conducts seminars and workshops in different Schools and Univerisites to spread awareness, about being a Smart and Secure Cyber User. </p>
-                    <div class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full">
-                    </div>
                 </div>
-                <div class="p-12 pt-0 md:w-1/2 flex flex-col items-start">
+                <div id= "teaminfo" class="p-12 pt-0 md:w-1/2 flex flex-col items-start">
                     <span class="py-4  text-green-500 border-green-500 font-bold text-2xl flex flex-nowrap">Team</span>
                     <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">We have many team members who have greate expertise in cyber secuity field</h2>
                     <p class="leading-relaxed mb-8">Our tream have 10 members. Decreption about your team Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur pariatur voluptas iusto!</p>

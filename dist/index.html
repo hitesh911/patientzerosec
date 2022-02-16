@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
+    <script src="/main.js"></script>
     <title>Paientzerosec</title>
-  <link rel="stylesheet" href="/assets/style.746068aa.css">
+  <link rel="stylesheet" href="/assets/style.162baa1d.css">
 </head>
 
 <body>
@@ -18,14 +19,30 @@
                 <div class="flex ">
                     <!-- Website Logo -->
                     <div class="flex items-center">
-                        <a href="#" class=" ">
+                        <a href="/" class=" ">
                             <img src="/assets/logo.dd5105cb.png" alt="Logo" class="h-12 w-20" />
                         </a>
                     </div>
                     <!-- Primary Navbar items -->
                     <div class="flex flex-wrap items-center ">
                         <a href="/index.html" class="py-4 px-2 text-green-500 border-b-4 border-green-500 font-semibold">Home</a>
-                        <a href="/services.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Services</a>
+                        <div data-dropdown  class=" services-dropdown">
+                            <button data-dropdown-button class=" drop-button py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Services
+                                <svg id= "dropdown-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down ml-1" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                  </svg>                               
+                            </button>
+                                <div class="drop-shadow services-dropdown-menu">
+                                    <ul class = "services-list">
+                                        <li><a href="/index.html#webapplication"> Web Application</a></li>
+                                        <li><a href="/index.html#networking"> Networking</a></li>
+                                        <li><a href="/index.html#mobileapplication"> Mobile application</a></li>
+                                        <li><a href="/index.html#wireless"> Wireless Networking</a></li>
+                                        <li><a href="/index.html#hackingattacks"> Hacking Attacks</a></li>
+                                        <li><a href="/index.html#sourcecode"> Source Code</a></li>
+                                    </ul>
+                                </div>
+                        </div>
                         <a href="/about.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">About</a>
                         <a href="/contact.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Contact</a>
                     </div>
@@ -35,11 +52,22 @@
     </nav>
     <!-- main content section -->
     <section class="text-gray-600 body-font">
-        <div class="bg-aliceblue container px-5 py-10 mx-auto">
-            <div class="flex flex-wrap -m-4">
+        <div class="sm:text-3xl mt-4 mb-4 typewriter flex justify-center">
+            <h2 class=" text-center text-2xl title-font font-medium text-gray-900">PatientZero Security</h2>
+        </div>
+        <div class="p-6 pt-0 pb-0 flex flex-col items-start justify-center">
+            <p  class=" home-content leading-relaxed mb-3">We focus on providing variety of security services for our client’s applications & infrastructure. Some of the Cyber Security services offered by us include Vulnerability Assessment and Penetration Testing today known as VAPT, Red Team Attack Simulation and Source Code Review Assessments. We also provide customized security solutions as per the client needs. Our Team at PatientZero Security consists of Highly Experienced and Industry Certified Security Professionals each best at different level of technical skills. PatientZero Security, apart from being a CyberSecurity Services provider also conducts seminars and workshops in different Schools and Univerisites to spread awareness, about being a Smart and Secure Cyber User. </p>
+        </div>
+        <div class="text-center ">
+            <a class = " team-info-link" href="/about.html#teaminfo">Know About Our Team</a>
+        </div>
+        <div class="bg-aliceblue container px-5 py-10 pt-2 mx-auto">
+            <span class="py-4 pl-3 text-green-500  border-green-500 font-bold text-2xl flex flex-nowrap">Services :</span>
+            <div class="flex flex-wrap -m-4 justify-center">
                 <!-- first item  -->
-                <div class="p-4 md:w-1/3">
+                <div id = "webapplication" class="p-4 md:w-1/3">
                     <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                        <a href="webapplication.html">
                         <svg class="lg:h-48 md:h-36 mt-5 max-h-32 mt-5 max-h-32 w-full object-cover object-center" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" width="1139.17088" height="654.54324" viewBox="0 0 1139.17088 654.54324" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <title>Web Application</title>
                             <circle cx="246.82682" cy="521.76476" r="59.24334" fill="#f2f2f2" />
@@ -84,36 +112,18 @@
                             <path d="M350.58593,777.27162a87,87,0,1,1,87-87A87.09858,87.09858,0,0,1,350.58593,777.27162Zm0-172a85,85,0,1,0,85,85A85.09629,85.09629,0,0,0,350.58593,605.27162Z" transform="translate(-30.41456 -122.72838)" fill="#3f3d56" />
                             <path d="M980.58593,655.27162a55,55,0,1,1,55-55A55.06223,55.06223,0,0,1,980.58593,655.27162Zm0-108a53,53,0,1,0,53,53A53.05963,53.05963,0,0,0,980.58593,547.27162Z" transform="translate(-30.41456 -122.72838)" fill="#3f3d56" />
                         </svg>
+                    </a>
                         <div class="p-6">
-                            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">PatientZeroSec</h2>
-                            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Web Application</h1>
-                            <p class=" home-content text-ellipsis overflow-hidden leading-relaxed mb-3 ">We at PatientZero Security, penetrate your Website / Web Application through Automated and Manual penetration testing methods to detect any vulnerability, for threats in a web application and then exploit them from a blackbox perspective in order to evaluate security of a Web Application. Not only we follow the OWASP Testing Guide V4 Methodology, but also our Team consists of experienced Bug Bounty Hunters who would use a modern day creative attack approach on your Web Applications.
-                                The ultimate goal of the penetration test is to detect vulnerabilities throughout the Web application and its elements , eventually help you with the mitigation of those bugs.</p>
-                            <div class="flex items-center flex-wrap ">
-                                <a href="/services.html#webapplication" class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0 hover:cursor-pointer">Learn More
-                                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M5 12h14"></path>
-                                        <path d="M12 5l7 7-7 7"></path>
-                                    </svg>
-                                </a>
-                                <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                                        <circle cx="12" cy="12" r="3"></circle>
-                                    </svg>1.2K
-                                </span>
-                                <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                                    </svg>6
-                                </span>
+                            <div class="flex items-center justify-center flex-wrap ">
+                                <a href="/webapplication.html" class="title-font text-lg font-medium text-gray-900 mb-3">Web Application</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- second item  -->
-                <div class="p-4 md:w-1/3">
-                    <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                <div id = "networking" class="p-4 md:w-1/3">
+                    <div  class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                    <a href="/networking.html">
                         <svg class="lg:h-48 md:h-36 mt-5 max-h-32 w-full object-cover object-center" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" width="1176.60617" height="873.97852" viewBox="0 0 1176.60617 873.97852" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <title>Networking</title>
                             <path d="M1095.6635,225.46254C962.121,39.6324,680.01881-35.74836,402.58037,45.43851,255.907,88.35958,114.48682,174.35831,44.40241,340.87958-80.881,638.55435,182.16734,733.62442,354.17234,763.9244c83.17231,14.65143,161.50651,39.26261,233.089,72.77077C716.04472,896.97936,944.00013,950.39754,1115.8936,699.2859,1240.4822,517.27986,1184.616,349.24377,1095.6635,225.46254Z" transform="translate(-11.69692 -13.01074)" fill="#f2f2f2" />
@@ -149,37 +159,18 @@
                             <circle cx="991.17056" cy="607.78414" r="11.96804" fill="#34ad34" />
                             <circle cx="600.35225" cy="480.67534" r="11.96804" fill="#34ad34" />
                         </svg>
+                    </a>
                         <div class="p-6">
-                            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">PatientZeroSec</h2>
-                            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Networking</h1>
-                            <p class=" home-content text-ellipsis overflow-hidden leading-relaxed mb-3 ">During an External Network Penetration Testing, different types of vulnerabilities and security flaws are evaluated in your external infrastructure which include servers, hosts and devices. Our PatientZero Security Experts will examine and research all of your internet-facing assets from an attackers point of view to identify a way to access your network.
-                                We use similar tools, methodologies and approach used by the bad actors to breach the public facing systems of your organization.
-                            </p>
-                            <div class="flex items-center flex-wrap ">
-                                <a href="/services.html#networking" class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M5 12h14"></path>
-                                        <path d="M12 5l7 7-7 7"></path>
-                                    </svg>
-                                </a>
-                                <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                                        <circle cx="12" cy="12" r="3"></circle>
-                                    </svg>1.2K
-                                </span>
-                                <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                                    </svg>6
-                                </span>
+                            <div class="flex items-center  justify-center flex-wrap ">
+                                <a href="/networking.html" class="title-font text-lg font-medium text-gray-900 mb-3">Networking</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- third item  -->
-                <div class="p-4 md:w-1/3">
+                <div id = "mobileapplication" class="p-4 md:w-1/3">
                     <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                        <a href = "/mobileapplication.html">
                         <svg class="lg:h-48 md:h-36 mt-5 max-h-32 w-full object-cover object-center" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" width="820.61472" height="714.55787" viewBox="0 0 820.61472 714.55787" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <title>Mobile Application</title>
                             <path d="M708.72606,261.94463h-3.91268V154.7579a62.03677,62.03677,0,0,0-62.037-62.03684H415.687A62.03678,62.03678,0,0,0,353.65,154.7579V742.79264a62.03677,62.03677,0,0,0,62.037,62.03683H642.77643a62.03676,62.03676,0,0,0,62.037-62.03683V338.242h3.91268Z" transform="translate(-189.69264 -92.72106)" fill="#3f3d56" />
@@ -221,36 +212,18 @@
                             <path d="M810.29862,362.44321a7.46666,7.46666,0,0,1,8.23586,5.128c6.84947,21.584,27.95077,93.81335,6.98533,103.72284-24.69358,11.67164-42.714,11.15847-42.714,11.15847l-9.64534-23.748,8.78051-8.24031,9.37441-60.27537,4.492-25.55048Z" transform="translate(-189.69264 -92.72106)" fill="#575a89" />
                             <polygon points="614.115 309.917 610.115 349.917 575.115 364.917 614.115 355.917 614.115 309.917" opacity="0.4" />
                         </svg>
+                    </a>
                         <div class="p-6">
-                            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">PatientZeroSec</h2>
-                            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Mobile Application</h1>
-                            <p class=" home-content text-ellipsis overflow-hidden leading-relaxed mb-3 ">Mobile Application Pentesting is the way toward examining a portable application to discover security shortcomings which will survey front-end UIs, back-end web administrations, web administrations (API). During a MobileApplication Pentest, PatientZero Experts will attempt hack your mobile applications from a Malicious Hacker’s Perspective focusing on evaluating the Mobile Application’s Security.
-                                We will audit highlights like cryptography, secret key hashing and information stockpiling. Likewise affirming any versatile stage highlights, for example, the iOS keychain, or the unique mark scanner are secure. The Internet contains a tremendous measure of data on the most proficient method to test. All things considered, when we test, we follow the OWASP Mobile Security Project Methodology. This gives a nitty gritty system, regarded by specialists from everywhere the world.</p>
-                            <div class="flex items-center flex-wrap ">
-                                <a href="/services.html#mobileapplication" class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M5 12h14"></path>
-                                        <path d="M12 5l7 7-7 7"></path>
-                                    </svg>
-                                </a>
-                                <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                                        <circle cx="12" cy="12" r="3"></circle>
-                                    </svg>1.2K
-                                </span>
-                                <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                                    </svg>6
-                                </span>
+                            <div class="flex items-center  justify-center flex-wrap ">
+                                <a href="/mobileapplication.html" class="title-font text-lg font-medium text-gray-900 mb-3">Mobile Applications</a>
                             </div>
                         </div>
-                    </div>
+                        </div>
                 </div>
                 <!-- fourth item  -->
-                <div class="p-4 md:w-1/3">
-                    <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                <div id ="wireless" class="p-4 md:w-1/3">
+                    <div  class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                        <a href = "/wirelessnetworking.html">
                         <svg class="lg:h-48 md:h-36 mt-5 max-h-32 w-full object-cover object-center" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" width="724.6028" height="527" viewBox="0 0 724.6028 527" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <path d="M919.827,189.9881H366.89408a3.5475,3.5475,0,0,0-3.545-3.4881H341.57158a3.547,3.547,0,0,0-3.545,3.4881h-5.33307a3.5475,3.5475,0,0,0-3.545-3.4881H307.371a3.5475,3.5475,0,0,0-3.545,3.4881H284.42132a42.52292,42.52292,0,0,0-42.47514,42.47444v.41816c-.06658-.00382-.13039-.02-.19837-.02h-.498a3.55111,3.55111,0,0,0-3.55121,3.55121v41.53836a3.55111,3.55111,0,0,0,3.55121,3.55121h.498c.068,0,.13179-.01621.19837-.02V671.02555A42.52292,42.52292,0,0,0,284.42132,713.5H919.827a42.52277,42.52277,0,0,0,42.47445-42.47445v-438.563A42.52277,42.52277,0,0,0,919.827,189.9881ZM949.517,671.02555A29.724,29.724,0,0,1,919.827,700.71563H284.42132a29.72413,29.72413,0,0,1-29.69077-29.69008v-438.563a29.72413,29.72413,0,0,1,29.69077-29.69008H919.827A29.724,29.724,0,0,1,949.517,232.46254Z" transform="translate(-237.6986 -186.5)" fill="#ccc" />
                             <path d="M919.82661,707.81806H284.42115a36.83414,36.83414,0,0,1-36.79268-36.79251v-438.563A36.83413,36.83413,0,0,1,284.42115,195.67H919.82661a36.83416,36.83416,0,0,1,36.79285,36.7925v438.563A36.83417,36.83417,0,0,1,919.82661,707.81806Z" transform="translate(-237.6986 -186.5)" fill="#e6e6e6" />
@@ -300,35 +273,18 @@
                             <path d="M492.04858,386.45032a22.86929,22.86929,0,0,0-22.86926,22.86928c0,12.63036,22.86926,54.10547,22.86926,54.10547S514.91784,421.95,514.91784,409.3196A22.86929,22.86929,0,0,0,492.04858,386.45032Zm0,34.02508a10.598,10.598,0,1,1,10.598-10.598,10.598,10.598,0,0,1-10.598,10.598h0Z" transform="translate(-237.6986 -186.5)" fill="#ccc" />
                             <circle cx="260.3014" cy="310.5" r="16" fill="#fff" />
                             <path d="M498.04858,473.45032a22.86929,22.86929,0,0,0-22.86926,22.86928c0,12.63036,22.86926,54.10547,22.86926,54.10547S520.91784,508.95,520.91784,496.3196A22.86929,22.86929,0,0,0,498.04858,473.45032Zm0,34.02508a10.598,10.598,0,1,1,10.598-10.598,10.598,10.598,0,0,1-10.598,10.598h0Z" transform="translate(-237.6986 -186.5)" fill="#3f3d56" /></svg>
-                        <div class="p-6">
-                            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">PatientZeroSec</h2>
-                            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Wireless Networking</h1>
-                            <p class=" home-content text-ellipsis overflow-hidden leading-relaxed mb-3 ">During a Wirelss Penetration Test, Our PatientZero Security Team attempts to break into your Wireless Infrastructure from outside the organization. We hack and exploit your wireless access points from a Malicious Hacker’s perspective.</p>
-                            <div class="flex items-center flex-wrap ">
-                                <a href="/services.html#wireless" class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M5 12h14"></path>
-                                        <path d="M12 5l7 7-7 7"></path>
-                                    </svg>
-                                </a>
-                                <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                                        <circle cx="12" cy="12" r="3"></circle>
-                                    </svg>1.2K
-                                </span>
-                                <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                                    </svg>6
-                                </span>
-                            </div>
+                        </a>
+                            <div class="p-6">
+                                <div class="flex items-center  justify-center flex-wrap ">
+                                    <a href="/wirelessnetworking.html" class="title-font text-lg font-medium text-gray-900 mb-3">Wireless Networking</a>
+                                </div>
                         </div>
                     </div>
                 </div>
                 <!-- fifth item  -->
-                <div class="p-4 md:w-1/3">
+                <div id = "hackingattacks" class="p-4 md:w-1/3">
                     <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                        <a href = "/hackingattacks.html">
                         <svg class="lg:h-48 md:h-36 mt-5 max-h-32 w-full object-cover object-center" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" width="1042.03903" height="709.08851" viewBox="0 0 1042.03903 709.08851" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <title>Hacking Attacks</title>
                             <rect width="875" height="470.67901" fill="#3f3d56" />
@@ -673,35 +629,18 @@
                             <path d="M522.98048,538.29525l8,17s18-6,18-9-8-16-8-16Z" transform="translate(-78.98048 -95.45574)" fill="#ffb8b8" />
                             <path d="M511.48048,312.79525s-23,10-27,49,14,139,23,156,15,29,15,29l27-12s-12-33-11-39-2-18-2-18l-4-81S549.48048,324.79525,511.48048,312.79525Z" transform="translate(-78.98048 -95.45574)" fill="#8985a8" />
                         </svg>
+                    </a>
                         <div class="p-6">
-                            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">PatientZeroSec</h2>
-                            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Hacking Attacks</h1>
-                            <p class=" home-content text-ellipsis overflow-hidden leading-relaxed mb-3 ">Hacking attacks try to access computers to steal information, install malware, launch a ransomware attack, or enter a network through unsecure computers. ... It actively seeks out and analyzes suspicious behavior and activities, stopping compromised systems or rogue process from accessing sensitive personal information.</p>
-                            <div class="flex items-center flex-wrap ">
-                                <a href="/services.html#hackingattacks" class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M5 12h14"></path>
-                                        <path d="M12 5l7 7-7 7"></path>
-                                    </svg>
-                                </a>
-                                <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                                        <circle cx="12" cy="12" r="3"></circle>
-                                    </svg>1.2K
-                                </span>
-                                <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                                    </svg>6
-                                </span>
+                            <div class="flex items-center  justify-center flex-wrap ">
+                                <a href="/hackingattacks.html" class="title-font text-lg font-medium text-gray-900 mb-3">Hacking Attacks</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- sixth item  -->
-                <div class="p-4 md:w-1/3">
+                <div id = "sourcecode" class="p-4 md:w-1/3">
                     <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                        <a href="/sourcecode.html">
                         <svg class="lg:h-48 md:h-36 mt-5 max-h-32 w-full object-cover object-center" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" width="578" height="578" viewBox="0 0 578 578" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <path d="M889,450a287.86052,287.86052,0,0,1-68.09,186.34c-1.6,1.9-3.23,3.77-4.88995,5.63a290.58834,290.58834,0,0,1-67.49,55.99q-8.67,5.205-17.72,9.81c-.61.31-1.23.62-1.84.92-.73.37-1.47.73-2.21,1.09A286.15918,286.15918,0,0,1,679.24,728q-2.55.72-5.11,1.4a288.58782,288.58782,0,0,1-65.84,9.49c-1.16.03-2.3.05-3.4.07-.39.01-.77.02-1.15.02-1.25.01-2.49.02-3.74.02a289.27116,289.27116,0,0,1-69.54-8.43q-3.42-.84-6.81-1.77a285.47262,285.47262,0,0,1-34.97-12.03q-9-3.75-17.68-8.09c-1.31-.66-2.62-1.32-3.91-2-.55-.27-1.09-.56-1.63-.84a290.458,290.458,0,0,1-81.65-64.06c-1.6-1.79-3.17-3.61-4.72-5.44a289.02532,289.02532,0,0,1,49.59-419.1c1.64-1.21,3.29-2.41,4.96-3.58q.49494-.345.99-.69a286.75277,286.75277,0,0,1,97.1-43.85c1.98-.49,3.96-.95,5.96-1.38a291.79785,291.79785,0,0,1,114.68-2.01c1.99.37,3.98.75,5.96,1.16a287.28078,287.28078,0,0,1,97.1,39.43c.66.42,1.32.84,1.98,1.28,1.33.86,2.66,1.74,3.97,2.63A288.68578,288.68578,0,0,1,889,450Z" transform="translate(-311 -161)" fill="#f2f2f2" />
                             <path d="M527,599.51l-92.37,8.2-.99.09V213.66q.49494-.345.99-.69a288.32258,288.32258,0,0,1,62.01-32.94l4.72,65.1.43,5.96,4.67,64.56L507.9,335.51l18.93,261.7Z" transform="translate(-311 -161)" fill="#ccc" />
@@ -808,28 +747,10 @@
                             <path d="M452.9668,539.44141a.49632.49632,0,0,1-.1626-.02735l-6.50147-2.23828a.49923.49923,0,0,1-.20556-.81055l4.83545-5.26464a.49972.49972,0,1,1,.73633.67578l-4.31885,4.70215,5.77929,1.99023a.49991.49991,0,0,1-.16259.97266Z" transform="translate(-311 -161)" fill="#34ad34" />
                             <path d="M461.87842,537.61719a.5.5,0,0,1-.34766-.85938l4.39453-4.249-5.90332-2.43262a.49963.49963,0,1,1,.38086-.92383l6.60938,2.72364a.49951.49951,0,0,1,.15722.82129l-4.94336,4.77929A.49966.49966,0,0,1,461.87842,537.61719Z" transform="translate(-311 -161)" fill="#34ad34" />
                             <path d="M454.33154,542.5a.48228.48228,0,0,1-.147-.02246.49976.49976,0,0,1-.33105-.625l4.61474-15a.50026.50026,0,0,1,.95606.29492l-4.61475,15A.50035.50035,0,0,1,454.33154,542.5Z" transform="translate(-311 -161)" fill="#34ad34" /></svg>
-                        <div class="p-6">
-                            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">PatientZeroSec</h2>
-                            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Source Code Review</h1>
-                            <p class=" home-content text-ellipsis overflow-hidden leading-relaxed mb-3 ">Secure Source Code Review is a Technique that is used to identify flaws in your code. Secure Source Code review involves auditing the source code of an application to cross-check that proper security controls are present, and if they are working as intented in right places. A Highly Effective Source Code Review discloses issues such as common bugs, potential resource leaks, security problems, and ensure that unit tests cover all code paths.</p>
-                            <div class="flex items-center flex-wrap ">
-                                <a href="/services.html#sourcecode" class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M5 12h14"></path>
-                                        <path d="M12 5l7 7-7 7"></path>
-                                    </svg>
-                                </a>
-                                <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                                        <circle cx="12" cy="12" r="3"></circle>
-                                    </svg>1.2K
-                                </span>
-                                <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                                    </svg>6
-                                </span>
+                        </a>
+                            <div class="p-6">
+                            <div class="flex items-center  justify-center flex-wrap ">
+                                <a href="/sourcecode.html" class="title-font text-lg font-medium text-gray-900 mb-3">Source code</a>
                             </div>
                         </div>
                     </div>
