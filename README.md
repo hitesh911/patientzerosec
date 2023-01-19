@@ -18,7 +18,7 @@ Now you are in main directory where you can find all html files
 # Structure
 This template is made with the intention to create cyber security cource selling site with appropriate information `But it could be customize easily`.
 
-#Features
+# Features
 
 * It includes custom written css or tailwind generated css.
 
