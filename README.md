@@ -24,4 +24,10 @@ This template is made with the intention to create cyber security cource selling
 
 * It includes Javascript and obviously html
 
+# Versions
+
+* [Prime Archive 3.0](https://github.com/hitesh911/patientzerosec3.0)
+* [Prime Archive 4.0](https://github.com/hitesh911/patientzerosec4.0)
+* [Prime Archive 5.0](https://github.com/hitesh911/patientzerosec5.0)
+* 
 Code is free to use under MIT license.
