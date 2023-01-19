@@ -4,8 +4,10 @@
 This project is to provide static (html,css,javascript) template with decent design that everyone can use.
 
 # Getting started
-`Clone repo with command` $ git clone https://github.com/hitesh911/patientzerosec.git
-`Then` $ cd patientzerosec/dist
+`Clone repo with command` 
+$ git clone https://github.com/hitesh911/patientzerosec.git
+`Then` 
+$ cd patientzerosec/dist
 
 Now you are in main directory where you can find all html files
 
